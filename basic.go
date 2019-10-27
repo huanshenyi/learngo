@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+	"math/cmplx"
+)
 
 var (
 	aa = 3
@@ -31,6 +35,48 @@ func variableShorter()  {
 	fmt.Println(a,b,c,s)
 }
 
+func euler()  {
+	fmt.Println(
+		cmplx.Exp(1i * math.Pi) + 1)
+}
+
+func triangle()  {
+	var a, b int = 3, 4
+	var c int
+	c = int(math.Sqrt(float64(math.Pow(float64(a),2) + math.Pow(float64(b),2))))
+	fmt.Println(c)
+}
+
+const filename  string = "abc.txt"
+
+func consts()  {
+	const a, b = 3, 4
+	c := math.Sqrt(math.Pow(a,2) + math.Pow(b,2))
+	fmt.Println(filename, c)
+}
+
+func enums()  {
+	const (
+		cpp = iota
+		java
+		python
+		golang
+	)
+
+	const(
+		b = 1 << (10 * iota)
+		kb
+		mb
+		gb
+		tb
+		pb
+		)
+
+	fmt.Println(cpp,java,python,golang)
+	fmt.Println(b,kb,mb,gb,tb,pb)
+	fmt.Println(math.Pow(2,10))
+}
+
 func main()  {
 	fmt.Println("hello world")
 	variable()
@@ -38,4 +84,9 @@ func main()  {
 	variableTypeDefuction()
 	variableShorter()
 	fmt.Println(aa,ss,bb)
+
+	euler()
+	triangle()
+	consts()
+	enums()
 }
