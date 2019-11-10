@@ -7,14 +7,14 @@ import (
 
 func grade(score int) string {
 	g := ""
-	switch  {
-	case score<0 || score>100:
-		panic(fmt.Sprintf("Wrong score:%d",score))
-	case score<60:
+	switch {
+	case score < 0 || score > 100:
+		panic(fmt.Sprintf("Wrong score:%d", score))
+	case score < 60:
 		g = "F"
-	case score<80:
+	case score < 80:
 		g = "C"
-	case score<90:
+	case score < 90:
 		g = "B"
 	case score <= 100:
 		g = "A"
@@ -22,13 +22,13 @@ func grade(score int) string {
 	return g
 }
 
-func main()  {
+func main() {
 	const filename = "abc.txt"
-	if contents,err := ioutil.ReadFile(filename);err!=nil{
+	if contents, err := ioutil.ReadFile(filename); err != nil {
 		fmt.Println(err)
 		return
-	}else {
-		fmt.Printf("%s\n",contents)
+	} else {
+		fmt.Printf("%s\n", contents)
 	}
 	fmt.Println(grade(80))
 }

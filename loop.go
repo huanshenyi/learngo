@@ -8,51 +8,51 @@ import (
 )
 
 func convertToBin(n int) string {
-    result := ""
-    for ; n>0;n/=2{
-    	lsb := n%2
-    	result = strconv.FormatInt(int64(lsb),10) + result
+	result := ""
+	for ; n > 0; n /= 2 {
+		lsb := n % 2
+		result = strconv.FormatInt(int64(lsb), 10) + result
 	}
-    return result
+	return result
 }
 
-func printFile(filename string)  {
-	file,err := os.Open(filename)
-	if err !=nil{
+func printFile(filename string) {
+	file, err := os.Open(filename)
+	if err != nil {
 		panic(err)
 	}
 	scanner := bufio.NewScanner(file)
-	for scanner.Scan(){
+	for scanner.Scan() {
 		fmt.Println(scanner.Text())
 	}
 }
 
-func readFile(filename string)  {
-	file,err := os.Open(filename)
-	if err != nil{
+func readFile(filename string) {
+	file, err := os.Open(filename)
+	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	defer file.Close()
 	read := bufio.NewReader(file)
-	b := make([]byte,1024)
-	n,err := read.Read(b)
-	if err != nil{
+	b := make([]byte, 1024)
+	n, err := read.Read(b)
+	if err != nil {
 		fmt.Println(err)
 		return
 	}
 	fmt.Println(n) //26
 	fmt.Println(string(b[:n]))
 	/*
-	abcde
-	12345
-	hello
-	again
+		abcde
+		12345
+		hello
+		again
 	*/
 
 }
 
-func main()  {
+func main() {
 	//fmt.Println(
 	//	convertToBin(5), //101
 	//	convertToBin(13), // 1101
