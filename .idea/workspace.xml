@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nonrepeating.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strings.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nonrepeating.go" beforeDir="false" afterPath="$PROJECT_DIR$/nonrepeating.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,11 +96,11 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build slices.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build strings.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/slices.go" />
+      <filePath value="$PROJECT_DIR$/strings.go" />
       <package value="main" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -106,10 +108,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build main (1)" />
+        <item itemvalue="Go Build.go build strings.go" />
         <item itemvalue="Go Build.go build main" />
         <item itemvalue="Go Build.go build maps.go" />
         <item itemvalue="Go Build.go build sliceops.go" />
-        <item itemvalue="Go Build.go build slices.go" />
       </list>
     </recent_temporary>
   </component>
