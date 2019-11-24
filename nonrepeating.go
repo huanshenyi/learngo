@@ -26,5 +26,4 @@ func lengthOfNonRepeatingSubStr(s string) int {
 func main() {
 	fmt.Println(
 		lengthOfNonRepeatingSubStr("abbcv"))
-
 }

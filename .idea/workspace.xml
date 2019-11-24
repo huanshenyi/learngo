@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/strings.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree/node.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nonrepeating.go" beforeDir="false" afterPath="$PROJECT_DIR$/nonrepeating.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main (1)">
+  <component name="RunManager" selected="Go Build.go build node.go">
     <configuration name="go build main (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -87,11 +86,11 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build sliceops.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build node.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/sliceops.go" />
+      <filePath value="$PROJECT_DIR$/tree/node.go" />
       <package value="main" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -107,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build node.go" />
         <item itemvalue="Go Build.go build main (1)" />
         <item itemvalue="Go Build.go build strings.go" />
         <item itemvalue="Go Build.go build main" />
         <item itemvalue="Go Build.go build maps.go" />
-        <item itemvalue="Go Build.go build sliceops.go" />
       </list>
     </recent_temporary>
   </component>
