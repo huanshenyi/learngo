@@ -6,23 +6,22 @@ import (
 )
 
 type myTreeNode struct {
-	node *tree.Node
+	*tree.Node // Embedding埋め込み
 }
 
 func (myNode *myTreeNode) postOrder() {
-	if myNode == nil || myNode.node == nil {
+	if myNode == nil || myNode.Node == nil {
 		return
 	}
-	left := myTreeNode{myNode.node.Left}
+	left := myTreeNode{myNode.Left}
+	right := myTreeNode{myNode.Right}
 	left.postOrder()
-	right := myTreeNode{myNode.node.Right}
 	right.postOrder()
-	myNode.node.Print()
+	myNode.Node.Print()
 }
 
 func main() {
-	var root tree.Node
-	root = tree.Node{Value: 3}
+	root := myTreeNode{&tree.Node{Value: 3}}
 	root.Left = &tree.Node{}
 	root.Right = &tree.Node{5, new(tree.Node), new(tree.Node)}
 	root.Right.Right = new(tree.Node)
@@ -32,7 +31,6 @@ func main() {
 
 	root.Traverse()
 	fmt.Println()
-	myRoot := myTreeNode{&root}
-	myRoot.postOrder()
+	root.postOrder()
 	fmt.Println()
 }
