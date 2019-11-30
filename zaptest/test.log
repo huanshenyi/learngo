@@ -3,3 +3,5 @@
 2019-11-28T09:54:18.332+0900	info	DefaultLogger init success
 2019/11/28 10:02:07 Log!!
 2019-11-28T10:02:07.290+0900	info	test_info_log
+2019/11/28 21:22:08 Log!!
+2019-11-28T21:22:08.122+0900	info	test_info_log

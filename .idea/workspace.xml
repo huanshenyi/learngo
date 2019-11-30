@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/queue/entry/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queue/queue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/entry/entry.go" beforeDir="false" afterPath="$PROJECT_DIR$/tree/entry/entry.go" afterDir="false" />
-    </list>
+    <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +44,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\program\learning\go\learngo\tree\entry" />
+      <recent name="D:\program\learning\go\learngo\basic\loop" />
+      <recent name="D:\program\learning\go\learngo\basic\func" />
+      <recent name="D:\program\learning\go\learngo\basic\branch" />
+      <recent name="D:\program\learning\go\learngo\basic\basic" />
+      <recent name="D:\program\learning\go\learngo\container" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -64,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/queue/entry">
+  <component name="RunManager" selected="Go Build.go build main/retriever">
     <configuration name="go build main (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -80,6 +79,15 @@
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/queue/entry/main.go" />
       <package value="main/queue/entry" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main/retriever" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/retriever/main.go" />
+      <package value="main/retriever" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -101,22 +109,13 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build strings.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/strings.go" />
-      <package value="main" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main/retriever" />
         <item itemvalue="Go Build.go build main/queue/entry" />
         <item itemvalue="Go Build.go build main/tree/entry" />
         <item itemvalue="Go Build.go build node.go" />
         <item itemvalue="Go Build.go build main (1)" />
-        <item itemvalue="Go Build.go build strings.go" />
       </list>
     </recent_temporary>
   </component>
