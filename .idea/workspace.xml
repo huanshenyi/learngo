@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="" />
+    <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue/entry/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/queue/entry/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/queue/queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retriever/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retriever/real/realretriever.go" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/real/realretriever.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/retriever">
+  <component name="RunManager" selected="Go Build.go build main/queue/entry">
     <configuration name="go build main (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -111,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main/retriever" />
         <item itemvalue="Go Build.go build main/queue/entry" />
+        <item itemvalue="Go Build.go build main/retriever" />
         <item itemvalue="Go Build.go build main/tree/entry" />
         <item itemvalue="Go Build.go build node.go" />
         <item itemvalue="Go Build.go build main (1)" />

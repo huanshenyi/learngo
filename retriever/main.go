@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"main/retriever/mock"
 	real2 "main/retriever/real"
+	"time"
 )
 
 type Retriever interface {
@@ -17,6 +18,30 @@ func download(r Retriever) string {
 func main() {
 	var r Retriever
 	r = mock.Retriever{"mock imooc"}
-	r = real2.Retriever{}
-	fmt.Println(download(r))
+	inspect(r)
+	r = &real2.Retriever{
+		UserAgent: "Mozilla/5.0",
+		TimeOut:   time.Minute,
+	}
+	inspect(r)
+
+	realRetriever, ok := r.(*real2.Retriever)
+	if ok {
+		fmt.Println(realRetriever.TimeOut)
+	} else {
+		fmt.Println("not a mock retriver")
+	}
+
+	//fmt.Println(download(r))
+}
+
+func inspect(r Retriever) {
+	fmt.Printf("%T %v\n", r, r)
+	fmt.Println("Type switch: ")
+	switch v := r.(type) {
+	case mock.Retriever:
+		fmt.Println("Content:", v.Contents)
+	case *real2.Retriever:
+		fmt.Println("UserAgent:", v.UserAgent)
+	}
 }
