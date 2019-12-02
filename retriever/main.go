@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io"
 	"main/retriever/mock"
 	real2 "main/retriever/real"
 	"time"
@@ -43,9 +42,9 @@ func session(s RetrieverPoster) string {
 }
 
 func main() {
-	io.ReadCloser()
 	var r Retriever
 	retriever := mock.Retriever{"this is a fack imooc.com"}
+	fmt.Println(retriever)
 	r = retriever
 	inspect(r)
 	r = &real2.Retriever{
@@ -67,12 +66,14 @@ func main() {
 }
 
 func inspect(r Retriever) {
-	fmt.Printf("%T %v\n", r, r)
-	fmt.Println("Type switch: ")
+	fmt.Println("Inspecting", r)
+	fmt.Printf(" > %T %v\n", r, r)
+	fmt.Println(" > Type switch: ")
 	switch v := r.(type) {
 	case mock.Retriever:
 		fmt.Println("Content:", v.Contents)
 	case *real2.Retriever:
 		fmt.Println("UserAgent:", v.UserAgent)
 	}
+	fmt.Println()
 }
