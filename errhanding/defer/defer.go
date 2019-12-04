@@ -2,8 +2,8 @@ package main
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
-	"log"
 	"main/functional/fib"
 	"os"
 	"strconv"
@@ -31,9 +31,20 @@ func writeFile(fileName string) {
 	//}
 	//wrier.Flush()
 
-	file, err := os.OpenFile(fileName, os.O_CREATE|os.O_WRONLY|os.O_APPEND, os.ModePerm)
+	//file, err := os.OpenFile(fileName, os.O_CREATE|os.O_WRONLY|os.O_APPEND, os.ModePerm)
+	file, err := os.OpenFile(fileName, os.O_EXCL|os.O_CREATE, 0666)
+	err = errors.New("this is a custom error")
 	if err != nil {
-		log.Fatal(err.Error())
+		//log.Fatal(err.Error())
+		//fmt.Println("Error:", err.Error())
+		if pathError, ok := err.(*os.PathError); !ok {
+			panic(err)
+		} else {
+			fmt.Printf("%v,%v,%v", pathError.Op,
+				pathError.Path,
+				pathError.Err)
+		}
+		return
 	}
 	defer file.Close()
 	xx := bufio.NewWriter(file)
