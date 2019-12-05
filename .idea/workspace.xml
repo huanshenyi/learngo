@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handle.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errhanding/defer/defer.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/defer/defer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fib.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,13 +68,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/errhanding/defer">
+  <component name="RunManager" selected="Go Build.go build main/errhanding/filelistingserver">
     <configuration name="go build main/errhanding/defer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/errhanding/defer/defer.go" />
       <package value="main/errhanding/defer" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main/errhanding/filelistingserver" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/errhanding/filelistingserver/web.go" />
+      <package value="main/errhanding/filelistingserver" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -95,15 +105,6 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main/queue/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/queue/entry/main.go" />
-      <package value="main/queue/entry" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build main/tree/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -115,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
         <item itemvalue="Go Build.go build main/errhanding/defer" />
         <item itemvalue="Go Build.go build main/tree/entry" />
         <item itemvalue="Go Build.go build main/functional" />
         <item itemvalue="Go Build.go build main/functional/adder" />
-        <item itemvalue="Go Build.go build main/queue/entry" />
       </list>
     </recent_temporary>
   </component>
