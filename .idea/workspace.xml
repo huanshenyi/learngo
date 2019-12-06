@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/errhanding/recover/recover.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handle.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/errhanding/recover">
+  <component name="RunManager" selected="Go Build.go build main/errhanding/filelistingserver">
     <configuration name="go build main/errhanding/defer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -114,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main/errhanding/recover" />
         <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
+        <item itemvalue="Go Build.go build main/errhanding/recover" />
         <item itemvalue="Go Build.go build main/errhanding/defer" />
         <item itemvalue="Go Build.go build main/tree/entry" />
         <item itemvalue="Go Build.go build main/functional" />
