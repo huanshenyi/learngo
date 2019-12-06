@@ -1,4 +1,4 @@
-package container
+package sliceops
 
 import "fmt"
 

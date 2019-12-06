@@ -42,9 +42,13 @@ func euler() {
 
 func triangle() {
 	var a, b int = 3, 4
+	fmt.Println(calcTriangle(a, b))
+}
+
+func calcTriangle(a, b int) int {
 	var c int
-	c = int(math.Sqrt(float64(math.Pow(float64(a), 2) + math.Pow(float64(b), 2))))
-	fmt.Println(c)
+	c = int(math.Sqrt(float64(a*a + b*b)))
+	return c
 }
 
 const filename string = "abc.txt"

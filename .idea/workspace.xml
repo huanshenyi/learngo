@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handle.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/filelistingserver/filelisting/handle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/basic/basic.go" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic/basic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/arrays/arrays.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/maps/maps.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/nonrepeating.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/sliceops.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/sliceops/sliceops.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/slices/slices.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/strings/strings.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,11 +54,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\program\learning\go\learngo\basic\loop" />
-      <recent name="D:\program\learning\go\learngo\basic\func" />
-      <recent name="D:\program\learning\go\learngo\basic\branch" />
-      <recent name="D:\program\learning\go\learngo\basic\basic" />
-      <recent name="D:\program\learning\go\learngo\container" />
+      <recent name="D:\program\learning\go\learngo\container\sliceops" />
+      <recent name="D:\program\learning\go\learngo\container\strings" />
+      <recent name="D:\program\learning\go\learngo\container\slices" />
+      <recent name="D:\program\learning\go\learngo\container\nonrepeating" />
+      <recent name="D:\program\learning\go\learngo\container\maps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -68,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/errhanding/filelistingserver">
+  <component name="RunManager" selected="Go Test.TestSubstr in main/container/nonrepeating">
     <configuration name="go build main/errhanding/defer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -96,31 +101,35 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main/functional" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSubstr in main/container/nonrepeating" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/container/nonrepeating" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/functional/fib.go" />
-      <package value="main/functional" />
+      <package value="main/container/nonrepeating" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestSubstr$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main/tree/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTriangle in main/basic/basic" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/basic/basic" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/tree/entry/entry.go" />
-      <package value="main/tree/entry" />
+      <package value="main/basic/basic" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestTriangle$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating" />
+        <item itemvalue="Go Test.TestTriangle in main/basic/basic" />
         <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
         <item itemvalue="Go Build.go build main/errhanding/recover" />
         <item itemvalue="Go Build.go build main/errhanding/defer" />
-        <item itemvalue="Go Build.go build main/tree/entry" />
-        <item itemvalue="Go Build.go build main/functional" />
       </list>
     </recent_temporary>
   </component>

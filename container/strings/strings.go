@@ -1,4 +1,4 @@
-package container
+package strings
 
 import (
 	"fmt"
