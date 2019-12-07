@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/http/gindemo/ginserver.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/strings/strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/strings/strings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,7 @@
     <property name="ask.go.tool.to.install.GoGolangCILintTaskConsumer" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/go/src/testProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,13 +71,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/container/strings">
+  <component name="RunManager" selected="Go Build.go build main/http/gindemo">
     <configuration name="go build main/container/strings" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/container/strings/strings.go" />
       <package value="main/container/strings" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main/http/gindemo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/http/gindemo/ginserver.go" />
+      <package value="main/http/gindemo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -115,24 +123,13 @@
       <pattern value="^TestSubstr$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestTriangle in main/basic/basic" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/basic/basic" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="main/basic/basic" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestTriangle$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main/http/gindemo" />
         <item itemvalue="Go Build.go build main/container/strings" />
         <item itemvalue="Go Test.BenchmarkSubstr in main/container/nonrepeating" />
         <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating (1)" />
         <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating" />
-        <item itemvalue="Go Test.TestTriangle in main/basic/basic" />
       </list>
     </recent_temporary>
   </component>
