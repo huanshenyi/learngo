@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/basic/basic.go" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic/basic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/arrays/arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/maps.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/maps/maps.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/nonrepeating.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/sliceops.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/sliceops/sliceops.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/slices.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/slices/slices.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/container/strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/strings/strings.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="251" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,16 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestSubstr in main/container/nonrepeating">
-    <configuration name="go build main/errhanding/defer" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/errhanding/defer/defer.go" />
-      <package value="main/errhanding/defer" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.BenchmarkSubstr in main/container/nonrepeating">
     <configuration name="go build main/errhanding/filelistingserver" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -92,13 +81,26 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main/errhanding/recover" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="BenchmarkSubstr in main/container/nonrepeating" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/container/nonrepeating" />
+      <framework value="gobench" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/errhanding/recover/recover.go" />
-      <package value="main/errhanding/recover" />
+      <package value="main/container/nonrepeating" />
       <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^BenchmarkSubstr$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSubstr in main/container/nonrepeating (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/container/nonrepeating" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="main/container/nonrepeating" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestSubstr$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSubstr in main/container/nonrepeating" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -125,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.BenchmarkSubstr in main/container/nonrepeating" />
+        <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating (1)" />
         <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating" />
         <item itemvalue="Go Test.TestTriangle in main/basic/basic" />
         <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
-        <item itemvalue="Go Build.go build main/errhanding/recover" />
-        <item itemvalue="Go Build.go build main/errhanding/defer" />
       </list>
     </recent_temporary>
   </component>
@@ -151,5 +153,8 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learngo$TestSubstr_in_main_container_nonrepeating__1_.out" NAME="TestSubstr in main/container/nonrepeating (1) Coverage Results" MODIFIED="1575678704320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -27,3 +27,36 @@ glide, dep,go dep...など
 ```
 
 # go mod
+
+# go cover-test
+使い方
+```text
+go tool cover
+```
+htmlでカバレージ率を見る
+```text
+go tool cover -html=c.out
+```
+
+```text
+go test -coverprofile=c.out
+```
+# ベンチマークテスト(性能テスト)
+
+```text
+func BenchmarkSubstr(b *testing.B)  {
+	s := "pwwkew"
+	ans := 8
+	
+	for i := 0;i<b.N;i++{
+		actual := LengthOfNonRepeatingSubStr(s)
+		if actual != ans{
+			b.Errorf("got %d for input %s;" + "expected %d",actual,s,ans)
+		}	
+	}
+}
+```
+コマンドラインで実行
+```text
+go test -bench .
+```
