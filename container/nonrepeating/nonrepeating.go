@@ -5,7 +5,8 @@ import (
 )
 
 func LengthOfNonRepeatingSubStr(s string) int {
-	lastOccurred := make(map[byte]int)
+	var lastOccurred = make(map[byte]int)
+	//lastOccurred := make([]int, 0xffff)
 	start := 0
 	maxLength := 0
 	for i, ch := range []byte(s) {

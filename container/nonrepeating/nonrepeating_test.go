@@ -20,13 +20,18 @@ func TestSubstr(t *testing.T) {
 }
 
 func BenchmarkSubstr(b *testing.B) {
-	s := "pwwkew"
-	ans := 3
+	s := "pwwkewdawdaddvdsdsfnodawkdnajchv"
+	for i := 0; i < 13; i++ {
+		s = s + s
+	}
+	ans := 10
+	b.Logf("len(s) = %d", len(s))
+	b.ResetTimer() //タイマーのリセット
 
 	for i := 0; i < b.N; i++ {
 		actual := LengthOfNonRepeatingSubStr(s)
 		if actual != ans {
-			b.Errorf("got %d for input %s;"+"expected %d", actual, s, ans)
+			b.Errorf("got %d for ;"+"expected %d", actual, ans)
 		}
 	}
 }

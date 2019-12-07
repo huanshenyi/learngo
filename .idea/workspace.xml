@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/nonrepeating/nonrepeating_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/container/strings/strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/container/strings/strings.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,13 +72,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.BenchmarkSubstr in main/container/nonrepeating">
-    <configuration name="go build main/errhanding/filelistingserver" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build main/container/strings">
+    <configuration name="go build main/container/strings" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/errhanding/filelistingserver/web.go" />
-      <package value="main/errhanding/filelistingserver" />
+      <filePath value="$PROJECT_DIR$/container/strings/strings.go" />
+      <package value="main/container/strings" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -127,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main/container/strings" />
         <item itemvalue="Go Test.BenchmarkSubstr in main/container/nonrepeating" />
         <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating (1)" />
         <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating" />
         <item itemvalue="Go Test.TestTriangle in main/basic/basic" />
-        <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
       </list>
     </recent_temporary>
   </component>

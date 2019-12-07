@@ -60,3 +60,21 @@ func BenchmarkSubstr(b *testing.B)  {
 ```text
 go test -bench .
 ```
+```text
+b.ResetTimer()
+```
+
+二進数のテスト結果ファイルを生成する
+
+```text
+go test -bench . -cpuprofile cpu.out
+```
+結果ファイルを見る
+```text
+go tool pprof cpu.out
+```
+webで性能グラフを見る 
+ライブラリダウンロード  http://www.graphviz.org/  binファイルをpathに追加
+```text
+web
+```
