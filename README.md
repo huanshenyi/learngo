@@ -86,3 +86,34 @@ web
 ```text
 \learngo\errhanding\filelistingserver\errwrapper_test.go
 ```
+
+## ドキュメント関連
+
+```text
+go doc
+```
+1.13では標準から排除 自分書いたものもドキュメントに追加される
+```text
+godoc   | godoc -http:6060
+```
+
+事例コード
+```gotemplate
+func ExampleQueue_Pop() {
+	q := Queue{1}
+	q.Push(2)
+	q.Push(3)
+	fmt.Println(q.Pop())
+	fmt.Println(q.Pop())
+	fmt.Println(q.IsEmpty())
+
+	fmt.Println(q.Pop())
+	fmt.Println(q.IsEmpty())
+	// Output:
+	// 1
+	// 2
+	// false
+	// 3
+	// true
+}
+```

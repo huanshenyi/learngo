@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/errhanding/filelistingserver/errwrapper_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queue/queue_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue/entry/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/queue/entry/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/queue/queue.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,34 +72,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.go test main/errhanding/filelistingserver">
-    <configuration name="go build main/errhanding/filelistingserver" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestQueue_Pop in main/queue">
+    <configuration name="go build main/queue/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/errhanding/filelistingserver/web.go" />
-      <package value="main/errhanding/filelistingserver" />
+      <filePath value="$PROJECT_DIR$/queue/entry/main.go" />
+      <package value="main/queue/entry" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main/http/gindemo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleQueue_Pop in main/queue" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/http/gindemo/ginserver.go" />
-      <package value="main/http/gindemo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestErrWrapper in main/errhanding/filelistingserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/errhanding/filelistingserver" />
+      <working_directory value="$PROJECT_DIR$/queue" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="main/errhanding/filelistingserver" />
+      <package value="main/queue" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestErrWrapper$" />
+      <pattern value="^ExampleQueue_Pop$" />
       <method v="2" />
     </configuration>
     <configuration name="TestErrWrapperInServer in main/errhanding/filelistingserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -111,6 +102,17 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestErrWrapperInServer$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestQueue_Pop in main/queue" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/queue" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="main/queue" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestQueue_Pop$" />
       <method v="2" />
     </configuration>
     <configuration name="go test main/errhanding/filelistingserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -125,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestQueue_Pop in main/queue" />
+        <item itemvalue="Go Test.ExampleQueue_Pop in main/queue" />
+        <item itemvalue="Go Build.go build main/queue/entry" />
         <item itemvalue="Go Test.go test main/errhanding/filelistingserver" />
         <item itemvalue="Go Test.TestErrWrapperInServer in main/errhanding/filelistingserver" />
-        <item itemvalue="Go Test.TestErrWrapper in main/errhanding/filelistingserver" />
-        <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
-        <item itemvalue="Go Build.go build main/http/gindemo" />
       </list>
     </recent_temporary>
   </component>
