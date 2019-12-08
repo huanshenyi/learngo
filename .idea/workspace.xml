@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/http/gindemo/ginserver.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errhanding/filelistingserver/errwrapper_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="251" />
+    <option name="myElementSize" value="276" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,13 +72,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/http/gindemo">
-    <configuration name="go build main/container/strings" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.go test main/errhanding/filelistingserver">
+    <configuration name="go build main/errhanding/filelistingserver" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/container/strings/strings.go" />
-      <package value="main/container/strings" />
+      <filePath value="$PROJECT_DIR$/errhanding/filelistingserver/web.go" />
+      <package value="main/errhanding/filelistingserver" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -90,46 +91,45 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="BenchmarkSubstr in main/container/nonrepeating" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestErrWrapper in main/errhanding/filelistingserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/container/nonrepeating" />
-      <framework value="gobench" />
-      <kind value="PACKAGE" />
-      <package value="main/container/nonrepeating" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^BenchmarkSubstr$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSubstr in main/container/nonrepeating (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/container/nonrepeating" />
+      <working_directory value="$PROJECT_DIR$/errhanding/filelistingserver" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="main/container/nonrepeating" />
+      <package value="main/errhanding/filelistingserver" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestSubstr$" />
+      <pattern value="^TestErrWrapper$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSubstr in main/container/nonrepeating" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestErrWrapperInServer in main/errhanding/filelistingserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/container/nonrepeating" />
+      <working_directory value="$PROJECT_DIR$/errhanding/filelistingserver" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="main/container/nonrepeating" />
+      <package value="main/errhanding/filelistingserver" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestSubstr$" />
+      <pattern value="^TestErrWrapperInServer$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test main/errhanding/filelistingserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/errhanding/filelistingserver" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="main/errhanding/filelistingserver" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test main/errhanding/filelistingserver" />
+        <item itemvalue="Go Test.TestErrWrapperInServer in main/errhanding/filelistingserver" />
+        <item itemvalue="Go Test.TestErrWrapper in main/errhanding/filelistingserver" />
+        <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
         <item itemvalue="Go Build.go build main/http/gindemo" />
-        <item itemvalue="Go Build.go build main/container/strings" />
-        <item itemvalue="Go Test.BenchmarkSubstr in main/container/nonrepeating" />
-        <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating (1)" />
-        <item itemvalue="Go Test.TestSubstr in main/container/nonrepeating" />
       </list>
     </recent_temporary>
   </component>
@@ -154,5 +154,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/learngo$TestSubstr_in_main_container_nonrepeating__1_.out" NAME="TestSubstr in main/container/nonrepeating (1) Coverage Results" MODIFIED="1575678704320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/learngo$TestErrWrapper_in_main_errhanding_filelistingserver.out" NAME="TestErrWrapper in main/errhanding/filelistingserver Coverage Results" MODIFIED="1575797099406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

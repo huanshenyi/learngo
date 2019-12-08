@@ -33,14 +33,16 @@ glide, dep,go dep...など
 ```text
 go tool cover
 ```
+
+```text
+go test -coverprofile=c.out
+```
+
 htmlでカバレージ率を見る
 ```text
 go tool cover -html=c.out
 ```
 
-```text
-go test -coverprofile=c.out
-```
 # ベンチマークテスト(性能テスト)
 
 ```text
@@ -77,4 +79,10 @@ webで性能グラフを見る
 ライブラリダウンロード  http://www.graphviz.org/  binファイルをpathに追加
 ```text
 web
+```
+
+## httpサーバーテスト関連
+
+```text
+\learngo\errhanding\filelistingserver\errwrapper_test.go
 ```

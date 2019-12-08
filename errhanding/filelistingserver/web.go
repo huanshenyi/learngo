@@ -12,24 +12,31 @@ type appHandler func(writer http.ResponseWriter, request *http.Request) error
 func errWrapper(handler appHandler) func(http.ResponseWriter, *http.Request) {
 	return func(writer http.ResponseWriter, request *http.Request) {
 		defer func() {
-			r := recover()
-			if _, ok := r.(error); ok {
+			//r := recover()
+			//if _, ok := r.(error); ok {
+			//	log.Printf("Panic:%v", r)
+			//	http.Error(writer, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
+			//}
+			if r := recover(); r != nil {
 				log.Printf("Panic:%v", r)
 				http.Error(writer, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 			}
 		}()
 		err := handler(writer, request)
 		if err != nil {
-			f, _ := os.Create("log.txt")
-			log.SetOutput(f)
-			log.Printf("Error handling request:%s", err.Error())
+			//f, _ := os.Create("log.txt")
+			//log.SetOutput(f)
+			//log.Printf("Error handling request:%s", err.Error())
+			log.Printf("Error occurred"+"handling request %s", err.Error())
 
+			// user error
 			if userErr, ok := err.(userError); ok {
 				http.Error(writer,
 					userErr.Message(),
 					http.StatusBadRequest)
 				return
 			}
+			// system error
 			code := http.StatusOK
 			switch {
 			case os.IsNotExist(err):
