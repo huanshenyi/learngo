@@ -97,7 +97,7 @@ go doc
 godoc   | godoc -http:6060
 ```
 
-事例コード
+事例コードの書き方
 ```gotemplate
 func ExampleQueue_Pop() {
 	q := Queue{1}
@@ -116,4 +116,8 @@ func ExampleQueue_Pop() {
 	// 3
 	// true
 }
+```
+データの衝突を見る
+```gotemplate
+go run -race goroutine.go
 ```
