@@ -2,25 +2,16 @@ package main
 
 import (
 	"fmt"
-	"sync"
 	"time"
 )
 
-var lock sync.Mutex
-
 func main() {
-	var a [10]int
-	fmt.Println(a) //{0,0,0,0,..}
-	//lock.Lock()
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 1000; i++ {
 		go func(ii int) { //race condition!
 			for {
-				a[ii]++
-				//runtime.Gosched()
+				fmt.Printf("Hello from"+"goroutine %d\n", i)
 			}
 		}(i)
 	}
-	//lock.Unlock()
-	time.Sleep(time.Millisecond)
-	fmt.Println(a)
+	time.Sleep(time.Minute)
 }
