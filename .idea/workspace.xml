@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/channel/channel.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/channel/done/done.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/channel/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/channel/channel.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/channel">
+  <component name="RunManager" selected="Go Build.go build main/channel/done">
     <configuration name="go build main/channel" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -79,21 +80,21 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main/channel/done" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/channel/done/done.go" />
+      <package value="main/channel/done" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main/goroutune" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/goroutune/goroutine.go" />
       <package value="main/goroutune" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main/queue/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/queue/entry/main.go" />
-      <package value="main/queue/entry" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -121,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main/channel/done" />
         <item itemvalue="Go Build.go build main/channel" />
         <item itemvalue="Go Build.go build main/goroutune" />
         <item itemvalue="Go Test.TestQueue_Pop in main/queue" />
         <item itemvalue="Go Test.ExampleQueue_Pop in main/queue" />
-        <item itemvalue="Go Build.go build main/queue/entry" />
       </list>
     </recent_temporary>
   </component>

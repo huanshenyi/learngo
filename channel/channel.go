@@ -24,7 +24,7 @@ func chanDemo() {
 		channels[i] = createWorker(i)
 	}
 	for i := 0; i < 10; i++ {
-		channels[i] <- i
+		channels[i] <- 'a' + i
 	}
 	time.Sleep(time.Millisecond)
 }
