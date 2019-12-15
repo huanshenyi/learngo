@@ -5,6 +5,8 @@ import (
 	"main/errhanding/filelistingserver/filelisting"
 	"net/http"
 	"os"
+
+	_ "net/http/pprof"
 )
 
 type appHandler func(writer http.ResponseWriter, request *http.Request) error

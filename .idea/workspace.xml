@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/basic/atomic/atomic.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/errhanding/filelistingserver/web.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/basic/atomic">
+  <component name="RunManager" selected="Go Build.go build main/errhanding/filelistingserver">
     <configuration name="go build main/basic/atomic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -79,30 +80,30 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main/channel" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/channel/channel.go" />
-      <package value="main/channel" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main/channel/done" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/channel/done/done.go" />
-      <package value="main/channel/done" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build main/channel/select" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/channel/select/select.go" />
       <package value="main/channel/select" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main/errhanding/filelistingserver" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/errhanding/filelistingserver/web.go" />
+      <package value="main/errhanding/filelistingserver" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main/http" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/http/client.go" />
+      <package value="main/http" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -117,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
+        <item itemvalue="Go Build.go build main/http" />
         <item itemvalue="Go Build.go build main/basic/atomic" />
         <item itemvalue="Go Build.go build main/channel/select" />
         <item itemvalue="Go Build.go build main/tree/entry" />
-        <item itemvalue="Go Build.go build main/channel/done" />
-        <item itemvalue="Go Build.go build main/channel" />
       </list>
     </recent_temporary>
   </component>

@@ -121,3 +121,24 @@ func ExampleQueue_Pop() {
 ```gotemplate
 go run -race goroutine.go
 ```
+
+# サーバー状態チェック
+
+下記のimport
+```gotemplate
+	_ "net/http/pprof"
+```
+以下のようにアクセス
+```gotemplate
+http://localhost:8888/debug/pprof/
+```
+
+## httpサーバーのcup処理を見る (30s)
+pprofのソースコードでも確認できる
+```gotemplate
+go tool pprof http://localhost:8888/debug/pporof/profile
+```
+## httpサーバーのメモリを見る
+```gotemplate
+go tool pprof http://localhost:8888/debug/pporof/heap
+``` 
