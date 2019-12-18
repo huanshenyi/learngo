@@ -13,3 +13,4 @@ utf8Reader := transform.NewReader(resp.Body, simplifiedchinese.GBK.NewDecoder())
 ```gotemplate
 go get golang.org/x/net/html
 ```
+## goのcssセレクター or xpathは別途ライブラリが必要

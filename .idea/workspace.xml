@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crawler/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/regex/regex.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main/crawler">
+  <component name="RunManager" selected="Go Build.go build main/basic/regex">
     <configuration name="go build main/basic/atomic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -82,12 +80,12 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main/channel/select" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main/basic/regex" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/channel/select/select.go" />
-      <package value="main/channel/select" />
+      <filePath value="$PROJECT_DIR$/basic/regex/regex.go" />
+      <package value="main/basic/regex" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -120,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main/basic/regex" />
         <item itemvalue="Go Build.go build main/crawler" />
         <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
         <item itemvalue="Go Build.go build main/http" />
         <item itemvalue="Go Build.go build main/basic/atomic" />
-        <item itemvalue="Go Build.go build main/channel/select" />
       </list>
     </recent_temporary>
   </component>
