@@ -39,7 +39,6 @@ func main() {
 }
 
 func determineEncoding(r io.Reader) encoding.Encoding {
-
 	bytes, err := bufio.NewReader(r).Peek(1024)
 	if err != nil {
 		panic(err)
@@ -53,7 +52,8 @@ func printCityList(contents []byte) {
 	re := regexp.MustCompile(`<a href="(/career/job_offers/dev_language/[0-9a-zA-Z]+)">([^<]+)</a>`)
 	matches := re.FindAllSubmatch(contents, -1)
 	for _, m := range matches {
-		fmt.Printf("Language:%s, URL: %s\n", m[2], m[1])
+		url := fmt.Sprintf("%v%s", "https://paiza.jp/", m[1])
+		fmt.Printf("Language:%s, URL: %s\n", m[2], url)
 	}
 	fmt.Printf("Matches found:%d\n", len(matches))
 }
