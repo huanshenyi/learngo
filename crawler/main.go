@@ -6,6 +6,7 @@ import (
 	"io"
 	"io/ioutil"
 	"net/http"
+	"regexp"
 
 	"golang.org/x/text/transform"
 
@@ -32,7 +33,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("%s\n", all)
+	//fmt.Printf("%s", all)
+	printCityList(all)
 
 }
 
@@ -45,4 +47,13 @@ func determineEncoding(r io.Reader) encoding.Encoding {
 	// htmlのcharsetを予測
 	e, _, _ := charset.DetermineEncoding(bytes, "")
 	return e
+}
+
+func printCityList(contents []byte) {
+	re := regexp.MustCompile(`<a href="(/career/job_offers/dev_language/[0-9a-zA-Z]+)">([^<]+)</a>`)
+	matches := re.FindAllSubmatch(contents, -1)
+	for _, m := range matches {
+		fmt.Printf("Language:%s, URL: %s\n", m[2], m[1])
+	}
+	fmt.Printf("Matches found:%d\n", len(matches))
 }
