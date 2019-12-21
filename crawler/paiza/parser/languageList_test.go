@@ -9,6 +9,7 @@ func TestParseLanguageList(t *testing.T) {
 
 	//contents, err := ioutil.ReadFile("languageList_test_data.html")
 	contents, err := fetcher.Fetch("https://paiza.jp/career/job_offers/dev_language/Kotlin")
+	//fmt.Printf("%s", contents)
 	if err != nil {
 		panic(err)
 	}
@@ -18,7 +19,7 @@ func TestParseLanguageList(t *testing.T) {
 		"https://paiza.jp//career/job_offers/dev_language/Java", "https://paiza.jp//career/job_offers/dev_language/C", "https://paiza.jp//career/job_offers/dev_language/PHP",
 	}
 	expectedLanguages := []string{
-		"Java", "C", "PHP",
+		"language:Java", "language:C", "language:PHP",
 	}
 	if len(result.Requests) != resultSize {
 		t.Errorf("result should hava %d requests; but had %d", resultSize, len(result.Requests))
