@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<body>
+<div class='o-global-header o-global-header--pc-only' data-vue-template id='header'>
+    <div class='o-global-header__pc'>
+        <div class='o-pc-header o-pc-header--career'>
+            <div class='o-pc-header__services o-pc-header__services--career'>
+                <div class='o-pc-header__services__inner'>
+                    <nav class='o-pc-header__menu'>
+                        <ul>
+                            <li>
+                                <a class="" href="/">総合トップ</a>
+                            </li>
+                            <li>
+                                <a class=" is-on" href="/career">エンジニア転職</a>
+                            </li>
+                            <li>
+                                <a class="" href="/en_try">未経験の転職</a>
+                            </li>
+                            <li>
+                                <a class="" href="/student">新卒就活</a>
+                            </li>
+                            <li>
+                                <a class="" href="/works">プログラミング学習</a>
+                            </li>
+                            <li>
+                                <a class="" href="/paiza_game_history">ゲーム/マンガ</a>
+                            </li>
+                            <li>
+                                <a class="" href="/guide/career?service_id=career">paizaとは？</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='o-global-header__mobile'>
+        <div class='o-mobile-header o-mobile-header--career'>
+            <div class='o-mobile-header__main-navigation'>
+                <b-button class='o-mobile-header__menu-button' v-b-toggle.global-mobile-menu=''>
+                    <i class='o-mobile-header__menu-button__icon'></i>
+                    <span class='sr-only'>メニュー</span>
+                </b-button>
+                <a class="o-mobile-header__logo" href="/career"><img srcset="/images/ds/logo/career/white.png 1x, /images/ds/logo/career/white@2x.png 2x" alt="paiza" height="23" src="https://paiza.jp/images/ds/logo/career/white.png" />
+                </a><a class="o-mobile-header__icon-menu" href="/sign_in"><span class='o-pc-header__icon-menu__icon-wrapper'>
+<i class='far fa-sign-in-alt o-pc-header__icon-menu__icon o-pc-header__icon-menu__icon--login'></i>
+<span class='o-pc-header__icon-menu__text'>ログイン</span>
+</span>
+                </a></div>
+            <b-collapse class='o-mobile-header__menu-collapse' id='global-mobile-menu' style='display: none;'>
+                <nav class='o-mobile-menu'>
+                    <ul class='o-mobile-menu__list'>
+                        <li><a href="/career/job_offers">エンジニア求人</a></li>
+                        <li>
+                            <a href="/challenges/info">スキルチェックを受ける
+                                <span class='o-mobile-menu__label'>PC推奨</span>
+                            </a></li>
+                        <li><a href="/career/interviews">インタビュー</a></li>
+                        <li><a href="/career/advice">転職成功ガイド</a></li>
+                        <li>
+                            <b-button class='o-mobile-menu__sub-menu-button' v-b-toggle.menu-recommend-content=''>
+                                おすすめコンテンツ
+                            </b-button>
+                            <b-collapse id='menu-recommend-content'>
+                                <ul class='o-mobile-menu__list--sub-menu'>
+                                    <li>
+                                        <a href="/interviews/office">オフィス訪問</a>
+                                    </li>
+                                    <li>
+                                        <a href="/interviews/education">paizaの教育活用事例</a>
+                                    </li>
+                                    <li>
+                                        <a href="/paijo">4コマ漫画 ぱいじょ！</a>
+                                    </li>
+                                    <li>
+                                        <a href="/paiza_game_history">ゲームイベント一覧</a>
+                                    </li>
+                                </ul>
+                            </b-collapse>
+                        </li>
+                        <li>
+                            <b-button class='o-mobile-menu__sub-menu-button' v-b-toggle.menu-all-service=''>
+                                paizaのサービス一覧
+                            </b-button>
+                            <b-collapse id='menu-all-service'>
+                                <ul class='o-mobile-menu__list--sub-menu'>
+                                    <li>
+                                        <a href="/career">paiza転職（中途転職者向け）</a>
+                                    </li>
+                                    <li>
+                                        <a href="/student">paiza新卒（学生向け）</a>
+                                    </li>
+                                    <li>
+                                        <a href="/en_try">EN:TRY（未経験向け）</a>
+                                    </li>
+                                    <li>
+                                        <a href="/works">paizaラーニング（プログラミング学習）</a>
+                                    </li>
+                                </ul>
+                            </b-collapse>
+                        </li>
+                    </ul>
+                </nav>
+            </b-collapse>
+        </div>
+    </div>
+    <div class='o-breadcrumb'>
+        <div class='o-breadcrumb__container'>
+            <ul class="m-breadcrumb" id="breadcrumb"><li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="/career"><span itemprop="title">paiza転職トップ</span></a></li><li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="/career/job_offers"><span itemprop="title">IT/Webエンジニア採用/求人情報</span></a></li><li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">Androidアプリエンジニア◎外食事業に特化した便利サービスを開発【フレックス/月残業平均15時間以下】</span></li></ul>
+        </div>
+    </div>
+
+</div>
+<div class='pc-only text-center' id='pagebody'>
+
+    <div class='jobDetail clearfix' data-job-offer-id='7004' id='job_offer_detail'>
+        <div class='page-title--career ttlDetail'>
+            <div class='inr clearfix'>
+                <h1 class='ttl mt0 mb0'>Androidアプリエンジニア◎外食事業に特化した便利サービスを開発【フレックス/月残業平均15時間以下】</h1>
+                <div style="clear: both;"><div class="c-label c-label--work_style">正社員</div></div>
+
+            </div>
+        </div>
+        <div class='ttlDetail1 clearfix'>
+            <h2 class='ttl mt0 mb0' id='corpname'>株式会社EPARKグルメ</h2>
+            <div class='rank'>
+                <table>
+                    <tr>
+                        <td class='cell1'>通過ランク</td>
+                        <td class='cell2'>
+<span>
+<span class='c'>
+C
+</span>
+</span>
+                        </td>
+                        <td class='cell3 font12 lineHeight13'>
+                            ランクC以上で面接可能
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class='boxDetail1 clearfix'>
+            <div class='lBox'>
+                <img alt="求人イメージ画像1" src="https://s3-ap-northeast-1.amazonaws.com/paiza-webapp/job_offers/photo1s/000/007/004/medium/1809recimg_1060x700entrance.jpg?1575874853" />
+                <div class='font10 ml20 mt20'>
+
+                </div>
+            </div>
+            <div class='rBox font13 lineHeight17'>
+                <div class='clearfix'>
+                    <div class='lBox'>
+                        <h3 class='ttl mt0 mb0 w200' style='line-height: 32px'>企業の特徴</h3>
+                    </div>
+                    <div class='rBox w300'>
+                        <div class='lineHeight17' style='width: 266px;'></div>
+
+                    </div>
+                </div>
+                <p class='txt1'>
+                <p>株式会社EPARKグルメは飲食業界におけるソリューションサービスを提供しています。人気飲食店の順番待ち予約システム『EPARKファスパ』、予約情報と顧客情報をデジタル管理する予約台帳システム『Resty』、個室／予約検索に特化したグルメサイト『EPARKグルメ』など、多岐に渡るサービスを展開しています。<br /><br />弊社は、歯科、薬局、マッサージ・リラクゼーションサロン、ヘアサロンなど様々な業界において検索・予約サービスを運営するEPARKホールディングスの一員です。EPARKホールディングスは、より専門性を高めたプロフェッショナル集団となるため、2015年8月業種毎を分社化。外食産業に特化する形で弊社が誕生しました。EPARKホールディングスが持つ販路を最大限に活かしたサービス開発が行えるのが、弊社最大の強みとなっています。<br /><br />食事は「今しかない喜び」です。私たちは普段なにげなく家族、友人、恋人等と食事をしますが、その1日はかけがえのない瞬間です。EPARKグルメのサービスが食と人の架け橋となり、人々の喜びや笑顔を増やせれば、外食業界および経済の活性化にも貢献できると考えています。より多くの人々に、私たちのサービスを通じて喜びや幸せを感じて貰えるよう、EPARKグルメは今後も成長し続けます。</p>
+                </p>
+                <div class='txt2 clearfix'>
+                    <div class='btn1'>
+                        <div class='inr'>
+                            <ul class='clearfix'>
+                                <li class='txt font12 lineHeight13'>
+                                    会員登録すれば応募前に
+                                    <br>
+                                    <span>合格確率をチェックできます！</span>
+                                </li>
+                                <li class='btn'>
+                                    <a class="tip" title="プログラミングスキルチェックで書類選考なしに出来るかどうかチェック！" href="/challenges?job_offer_id=7004">スキルチェックをしてみる</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class='btn2 rollover'>
+                        <a href="/sign_up?sid=career"><img alt="応募する(会員登録する)" src="https://paiza.jp/images/job/btn_entry_03.gif" width="233" height="51" />
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class='p-job-offer-tab-line--career'>
+            <ul class='clearfix' id='tab_nav'>
+                <li class='p-job-offer-tab p-job-offer-tab--career p-job-offer-tab--career__on'>
+                    <a href="/job_offers/7004">採用・求人詳細／開発環境</a>
+                </li>
+                <li class='p-job-offer-tab p-job-offer-tab--career'>
+                    <a href="/recruiters/2759?job_offer_id=7004#tab_nav">株式会社EPARKグルメ企業情報</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class='boxDetail2'>
+            <div class='inr'>
+                <table class='txt1'>
+                    <tr>
+                        <th class='ttl1'>
+                            <span>求人概要</span>
+                        </th>
+                        <td>
+                            <table class='txt2 w100p'>
+                                <tr>
+                                    <th>ポジション</th>
+                                    <td>Androidエンジニア</td>
+                                    <td rowspan='2'>
+                                        <div class='lineHeight17' style='width: 266px;'></div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        提示年収
+                                        <i class="fa fa-question-circle" title="想定年収について" data-toggle="popover" data-placement="top" data-html="true" data-content="<div><div>想定年収は年収提示額を保証するものではありません</div><a target=&quot;_blank&quot; href=&quot;https://paizasupport.zendesk.com/hc/ja/articles/360035798071&quot;>&gt;&gt; 詳しくはこちら</a></div>" style="cursor: help"></i>
+                                    </th>
+                                    <td>
+                                        <div class='strong font18 color_blue'>350万 〜 800万円</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class='lst'>
+                        <th class='ttl2'>
+                            <span>開発環境</span>
+                        </th>
+                        <td>
+                            <table class='txt2'>
+                                <tr>
+                                    <th>言語</th>
+                                    <td><ul class="clearfix mb0"><li class="lang_tag font14 priority"><a href="/career/job_offers/dev_language/Kotlin">Kotlin</a></li><li class="lang_tag font14"><a href="/career/job_offers/dev_language/Java">Java</a></li></ul></td>
+                                </tr>
+                                <tr>
+                                    <th>環境</th>
+                                    <td>Linux、Mac OS X、Windows</td>
+                                </tr>
+                                <tr>
+                                    <th>データベース</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>プロジェクト管理</th>
+                                    <td>Backlog、Git、GitHub</td>
+                                </tr>
+                                <tr>
+                                    <td class='cell1' colspan='2'></td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        支給マシン
+                                        <br>
+                                        開発手法
+                                        <br>
+                                        開発内容タイプ
+                                        <br>
+                                        その他
+                                    </th>
+                                    <td>
+                                        <div class='txt3'>
+                                            <ul class='rollover clearfix'>
+                                                <li class='txt'>閲覧には無料登録／ログインしてください。</li>
+                                                <li class='btn'>
+                                                    <a href="/sign_up?sid=career"><img alt="無料登録" src="https://paiza.jp/images/job/btn_02_01.gif" width="102" height="32" />
+                                                    </a></li>
+                                                <li class='btn'>
+                                                    <a href="/login?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><img alt="ログイン" src="https://paiza.jp/images/job/btn_02_02.gif" width="102" height="32" /></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class='boxDetail3 clearfix'>
+            <div class='lBox'>
+                <div class='box clearfix'>
+                    <div class='img'><img alt="求人イメージ画像2" src="https://s3-ap-northeast-1.amazonaws.com/paiza-webapp/job_offers/photo2s/000/007/004/medium/img-career-04.jpg?1575874853" /></div>
+                </div>
+            </div>
+            <div class='rBox'>
+                <div class='box clearfix'>
+                    <div class='img'><img alt="求人イメージ画像3" src="https://s3-ap-northeast-1.amazonaws.com/paiza-webapp/job_offers/photo3s/000/007/004/medium/IMG_0351.jpg?1575874853" /></div>
+                    <div class='txt'>
+                        <div class='inr'>
+                            <div class='inr'>
+                                <p class='mb0'>会議室での風景</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='boxDetail4'>
+            <h3 class='ttl'>
+                この求人の募集要項
+            </h3>
+            <table class='txt1 entrance_requirements_info'>
+                <tr>
+                    <th>
+                        <span>ポジション</span>
+                    </th>
+                    <td class='font16' colspan='3'>
+                        <strong>Androidエンジニア</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>特徴</span>
+                    </th>
+                    <td colspan='3'>
+                        <ul class="clearfix mb0"><li class="feature_tag font12 strong"><a href="/career/job_offers/work_feature/%E6%9C%8D%E8%A3%85%E8%87%AA%E7%94%B1">服装自由</a></li><li class="feature_tag font12 strong"><a href="/career/job_offers/work_feature/%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3OK">イヤホンOK</a></li><li class="feature_tag font12 strong"><a href="/career/job_offers/work_feature/%E3%83%8E%E3%83%BC%E3%83%88PC%EF%BC%8B%E3%83%A2%E3%83%8B%E3%82%BF%E5%88%A5%E9%80%94%E6%94%AF%E7%B5%A6">ノートPC＋モニタ別途支給</a></li><li class="feature_tag font12 strong"><a href="/career/job_offers/work_feature/%E6%AE%8B%E6%A5%AD%EF%BC%93%EF%BC%90H%E4%BB%A5%E5%86%85">残業３０H以内</a></li><li class="feature_tag font12 strong"><a href="/career/job_offers/work_feature/%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E9%9D%A2%E8%AB%87%E5%8F%AF">オンライン面談可</a></li></ul>
+                        <p>・残業時間は月平均15Hなのでプライベートや勉強の時間が持てます。<br />・過度な残業などは会社で禁止しており、原則月30H以上の残業はできません。<br />・リフレッシュルームや和室など環境もよく働きやすさを追求しています。<br /><br />◆福利厚生<br />・定期健康診断<br /></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>職務内容</span>
+                    </th>
+                    <td colspan='3'>
+                        <dl class='txt2'>
+                            <dt class='icon1'>自社サービス開発！アンドロイド開発</dt>
+                            <dd><p>店内が見えるグルメサイト、台帳システムResty、順番待ちシステム、社内システム、訪日システムなどの開発を行っていただきます。<br /><br />◆具体的な職務内容<br />・Androidアプリの開発<br /><br />◆募集背景<br />事業拡大につき人員拡大中<br /><br />◆入社後のフロー<br />主にOJTなどを用いて業務内容を覚えてもらいます。</p></dd>
+                        </dl>
+                        <dl class='txt2 mb0'>
+                            <dt class='icon2'>仕事のやりがい</dt>
+                            <dd><p>幅広い最新技術を活用しており、新しい技術や様々なシステムに関わりが持て経験豊富なエンジニアになれます。<br />裁量で任せられることが多いので、エンジニアのスペシャリストを目指したりマネージメントを行うエンジニアなど多岐なキャリアプランが構築できます。<br />順番待ち国内大手のサービスをエンドユーザに提供しており大規模なサービスに関わることができます。</p></dd>
+                        </dl>
+                        <dl class='mb0'>
+
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>応募要件</span>
+                    </th>
+                    <td colspan='3'>
+                        <dl class='txt2'>
+                            <dt class='icon3'>必須要件</dt>
+                            <dd><p>以下すべてのご経験をお持ちの方からのご応募をおまちしています！<br />・何らかのシステム開発経験　実務１年以上<br />・Kotlin, Java　のいずれか　実務１年以上<br /></p></dd>
+                        </dl>
+                        <dl class='txt2'>
+                            <dt class='icon4'>歓迎要件</dt>
+                            <dd><p>・ECサイト構築の経験<br />・スマートフォン、タブレット向けのシステム開発経験<br />・AWSを用いた開発経験<br />・仮想開発環境の構築<br />・コンテナ技術の応用<br />・スクラム・アジャイル経験者</p></dd>
+                        </dl>
+                        <dl class='txt2 mb0'>
+                            <dt class='icon5'>求める人物像</dt>
+                            <dd><p>・自分自身で考えて動ける方<br />・協調性を持って働ける方</p></dd>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>募集人数</span>
+                    </th>
+                    <td class='cell1'>若干名</td>
+                    <th>
+                        <span>配属部署人数</span>
+                    </th>
+                    <td class='cell1'>--</td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>給与体系・詳細</span>
+                    </th>
+                    <td class='cell1'><p>※経験・能力を考慮の上、当社規定により優遇いたします。</p></td>
+                    <th>
+<span>
+想定年収
+<i class="fa fa-question-circle" title="想定年収について" data-toggle="popover" data-placement="top" data-html="true" data-content="<div><div>想定年収は年収提示額を保証するものではありません</div><a target=&quot;_blank&quot; href=&quot;https://paizasupport.zendesk.com/hc/ja/articles/360035798071&quot;>&gt;&gt; 詳しくはこちら</a></div>" style="cursor: help"></i>
+</span>
+                    </th>
+                    <td class='cell1'>350万 〜 800万円</td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>勤務時間</span>
+                    </th>
+                    <td class='cell1'><p>フレックス制 (コアタイム10:00～15:00) 、月7.5H x 営業日数</p></td>
+                    <th>
+                        <span>休日休暇</span>
+                    </th>
+                    <td class='cell1'><p>＜年間休日124日 ※弊社カレンダーに準ずる＞<br />・夏季休暇<br />・年末年始休暇<br />・年次有給休暇<br />・慶弔休暇<br />　など</p></td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>諸手当</span>
+                    </th>
+                    <td class='cell1'><p>・通勤交通費支給（上限あり）<br />・慶弔見舞金制度<br />・結婚お祝い金<br />・出産お祝い金など<br /></p></td>
+                    <th>
+                        <span>インセンティブ</span>
+                    </th>
+                    <td class='cell1'></td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>昇給・昇格</span>
+                    </th>
+                    <td class='cell1'><p>給与改定あり：年2回</p></td>
+                    <th>
+                        <span>保険</span>
+                    </th>
+                    <td class='cell1'>
+                        <p>各種社会保険完備<br />（健康保険、雇用保険、厚生年金、労災保険）</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>試用期間</span>
+                    </th>
+                    <td class='cell1'><p>試用期間：6ヶ月（条件等は変わりません）</p></td>
+                    <th>
+                        <span>選考フロー</span>
+                    </th>
+                    <td class='cell1'>
+                        <p>paiza （コーディングテスト）<br />▼<br />1次、エンジニアリード、プロダクトリード面談<br />▼<br />2次、責任者面談<br />▼<br />内定</p>
+                        ※選考フロー、面接回数は状況に応じて変更になる可能性があります
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class='boxDetail5'>
+            <h3 class='ttl'>
+                勤務地
+            </h3>
+            <div class='box clearfix address_info'>
+                <div class='lBox'>
+                    <div id='map-canvas' style='width: 472px; height: 299px'>
+                        <iframe allowfullscreen='' frameborder='0' height='100%' src='https://www.google.com/maps/embed/v1/place?key=AIzaSyD1lkeBZFpJ4SfsQBQbTmdd2JVAAdDFEAA&amp;q=豊島区池袋 2-9-4&amp;zoom=15' style='border:0' width='100%'></iframe>
+                    </div>
+
+                </div>
+                <div class='rBox'>
+                    <dl class='txt1'>
+                        <dt>勤務地</dt>
+                        <dd>
+                            東京都豊島区池袋 2-9-4
+                            池袋MSビル 8F
+                            <p>※技術本部の現住所になります。</p>
+                        </dd>
+                    </dl>
+                    <dl class='txt1'>
+                        <dt>最寄り駅</dt>
+                        <dd><p>各線「池袋駅」より徒歩6分</p></dd>
+                    </dl>
+                </div>
+            </div>
+            <div id='address_info2'>
+                <p class='btn'>
+                    <a target="_blank" href="https://maps.google.co.jp/maps?q=35.7328389,139.7082638&amp;hl=ja">地図を拡大して表示</a>
+                </p>
+            </div>
+        </div>
+
+        <div class='boxDetail6'>
+            <div class='box'>
+                <div class='inr'>
+                    <p class='txt1'>
+                        この求人に応募するには、まず
+                        <strong>会員登録（無料）が必要</strong>
+                        です。
+                    </p>
+                    <div class='btn-apply txt2 rollover' id='btn-apply'>
+                        <a href="/sign_up?sid=career"><img alt="応募する(会員登録する)" src="https://paiza.jp/images/job/btn_entryform_04.gif" width="352" height="62" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='boxDetail7'>
+            <h3 class='ttl'>
+                開発環境の詳細情報
+            </h3>
+            <table class='txt1 development_environment_info'>
+                <tr>
+                    <th>
+<span>
+開発部門の特徴・強み
+</span>
+                    </th>
+                    <td>
+                        <p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+<span>
+組織構成
+<i class="fa fa-lock"></i>
+</span>
+                    </th>
+                    <td>
+                        <p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>配属部署</span>
+                    </th>
+                    <td>EPARK Gourmet 技術本部</td>
+                </tr>
+                <tr>
+                    <th>
+<span>
+配属上司経歴
+<i class="fa fa-lock"></i>
+</span>
+                    </th>
+                    <td><p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+<span>
+平均的なチーム構成
+<i class="fa fa-lock"></i>
+</span>
+                    </th>
+                    <td>
+                        <p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>開発手法・開発の仕組み</span>
+                    </th>
+                    <td><p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+<span>
+その他開発環境
+<i class="fa fa-lock"></i>
+</span>
+                    </th>
+                    <td><p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>主な開発実績</span>
+                    </th>
+                    <td>
+                        <p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span>技術向上、教育体制</span>
+                    </th>
+                    <td>
+                        <p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+<span>
+エンジニア評価の仕組み
+<i class="fa fa-lock"></i>
+</span>
+                    </th>
+                    <td>
+                        <p class='mb5'><img src="https://paiza.jp/images/job/bg_14_02.gif" alt="Bg 14 02" width="700" height="30" /></p>
+                        <p class='txt'>
+                            閲覧には無料登録／ログインしてください。
+                            <a href="/sign_up?sid=career"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                無料登録
+                            </a><span class='mr20'></span>
+                            <a href="/sign_in?ref=%2Fcareer%2Fjob_offers%2F7004%3Ffrom%3Dlist"><i class='glyphicon glyphicon-circle-arrow-right'></i>
+                                ログイン
+                            </a></p>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class='boxPickup w966 lazyload' data-include='/job_offers/7004/same_recruiter_offers'></div>
+    </div>
+    <div class='job_offer_categories'>
+        <div class='job_offer_categories__container'>
+            <strong class='mr10'>言語・環境一覧から求人を探す</strong>
+            <div class='d-inline-block'>
+                <ul class='c-list c-list--inline-border'>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Java">Java</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/C">C</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/C%252B%252B">C++</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/C%25EF%25BC%2583">C＃</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/PHP">PHP</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Ruby">Ruby</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Python2">Python2</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Python3">Python3</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Perl">Perl</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Scala">Scala</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Go%25E8%25A8%2580%25E8%25AA%259E">Go言語</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Objective-C">Objective-C</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Swift">Swift</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/Kotlin">Kotlin</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_language/JavaScript">JavaScript</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class='job_offer_categories__container'>
+            <strong class='mr10'>フレームワークから求人を探す</strong>
+            <div class='d-inline-block'>
+                <ul class='c-list c-list--inline-border mb0'>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Struts">Struts</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Seasar2">Seasar2</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Spring">Spring</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Laravel">Laravel</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/CakePHP">CakePHP</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Ruby%2520on%2520Rails">Ruby on Rails</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Django">Django</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/%252ENET%2520Framework">.NET Framework</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Node%252Ejs">Node.js</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Unity">Unity</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Android%2520SDK">Android SDK</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/React">React</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/Vue%252Ejs">Vue.js</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/AngularJS">AngularJS</a>
+                    </li>
+                    <li>
+                        <a class="job_offer_categories__link" href="/career/job_offers/dev_frameworks/jQuery">jQuery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<footer class='o-global-footer o-global-footer--pc-only' data-vue-template id='footer'>
+    <div class='o-responsive-footer'>
+        <div class='o-responsive-footer__top'>
+            <div class='o-responsive-footer__brand'>
+                <div class='o-responsive-footer__brand__logo'>
+                    <a href="/career"><img width="180" alt="paiza転職" src="https://paiza.jp/images/ds/logo/career/color.png" />
+                    </a></div>
+                <p class='o-responsive-footer__brand__description'>
+                    IT／WEBエンジニア向けプログラミング転職サイト「paiza（パイザ）転職」。
+                    あなたの技術力をスキルチェックで判定・可視化、他社でも通用する実力があるかどうかの腕試しができます。
+                    さらに、必要なランクを満たせば書類選考不要で面接を100％保証。実力がある人ほど転職活動が有利になるサービスです。
+                </p>
+            </div>
+
+            <ul class='o-responsive-footer__share-buttons'>
+                <li class='twitter'>
+                    <div class='twitter-button-wrapper' data-social-target='paiza_footer'>
+                        <a class='twitter-share-button' data-hashtags='paiza' data-url='' href='https://twitter.com/share'>Tweet</a>
+                    </div>
+                    <script>
+                        if (!!window.twttr && !!window.twttr.widgets) {
+                            twttr.widgets.load();
+                        }
+                    </script>
+
+                </li>
+                <li class='facebook'>
+                    <div class='fb-like' data-action='like' data-colorscheme='light' data-href='https://www.facebook.com/official.paiza' data-layout='button_count' data-share='false' data-show-faces='true'></div>
+                    <script>
+                        if (!!window.FB && !!window.FB.XFBML) {
+                            FB.XFBML.parse();
+                        }
+                    </script>
+
+                </li>
+            </ul>
+            <div class='o-responsive-footer__content'>
+                <nav class='o-responsive-footer__navigation'>
+                    <div class='o-responsive-footer__links'>
+                        <p class='o-responsive-footer__links__title'>コンテンツ</p>
+                        <ul class='o-responsive-footer__links__list'>
+                            <li>
+                                <a href="/challenges/info">スキルチェック</a>
+                            </li>
+                            <li><a href="/career/job_offers">中途エンジニア求人</a></li>
+                            <li><a href="/career/features">中途インタビュー</a></li>
+                            <li><a href="/career/advice">転職成功ガイド</a></li>
+                            <li><a href="/paijo">ぱいじょ！</a></li>
+                            <li><a href="/paiza_game_history">ゲームイベント</a></li>
+
+                        </ul>
+                    </div>
+                    <div class='o-responsive-footer__links'>
+                        <p class='o-responsive-footer__links__title'>paizaについて</p>
+                        <ul class='o-responsive-footer__links__list'>
+                            <li><a href="/guide/career">paizaとは</a></li>
+                            <li><a class="a-link--external" target="_blank" rel="noopener" href="http://gi-no.jp/">運営会社</a></li>
+                            <li><a href="/guide/sitemap">サイトマップ</a></li>
+                        </ul>
+                        <p class='o-responsive-footer__links__title'>採用ご担当者様へ</p>
+                        <ul class='o-responsive-footer__links__list'>
+                            <li><a href="/guide/keisai">中途求人掲載はこちら</a></li>
+                            <li><a href="/guide/keisai_student">新卒求人掲載はこちら</a></li>
+                        </ul>
+                    </div>
+                    <div class='o-responsive-footer__links'>
+                        <p class='o-responsive-footer__links__title'>ブログ・SNS</p>
+                        <ul class='o-responsive-footer__links__list o-responsive-footer__links__sns'>
+                            <li>
+                                <img src="https://paiza.jp/assets/icons/paiza_icon-6ad2f6c56caec537f1c1ffcc93723f5af04117b650f979f95136153f88200b54.png" alt="Paiza icon" />
+                                <a class="a-link--external" target="_blank" rel="noopener" href="http://paiza.hatenablog.com/">paiza開発日誌(Blog)</a>
+                            </li>
+                            <li>
+                                <img src="https://paiza.jp/assets/icons/twitter_icon-d29cbefd0b7062ee7bab13d2aad371dac5ee14a143056fc067dd3d5c13185f37.png" alt="Twitter icon" />
+                                <a class="a-link--external" target="_blank" rel="noopener" href="https://twitter.com/paiza_official">Twitter</a>
+                            </li>
+                            <li>
+                                <img src="https://paiza.jp/assets/icons/facebook_icon-bb8268f486a881d23589965e2a2119b8271a69a039f599341711fe9c9fce11a8.png" alt="Facebook icon" />
+                                <a class="a-link--external" target="_blank" rel="noopener" href="https://www.facebook.com/pages/paiza/116685535171645">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class='o-responsive-footer__mobile-navigation'>
+                    <b-button class='o-responsive-footer__links__collapse-button' v-b-toggle.footer-content=''>
+                        コンテンツ
+                    </b-button>
+                    <b-collapse id='footer-content'>
+                        <ul class='o-responsive-footer__links__list'>
+                            <li>
+                                <a href="/challenges/info">スキルチェック</a>
+                            </li>
+                            <li><a href="/paijo">ぱいじょ！</a></li>
+                            <li><a href="/paiza_game_history">ゲームイベント</a></li>
+                        </ul>
+                    </b-collapse>
+                    <b-button class='o-responsive-footer__links__collapse-button' v-b-toggle.footer-sitemap=''>
+                        paizaについて
+                    </b-button>
+                    <b-collapse id='footer-sitemap'>
+                        <ul class='o-responsive-footer__links__list'>
+                            <li><a href="/guide/guide">paizaとは</a></li>
+                            <li>
+                                <a target="_blank" rel="noopener" href="http://gi-no.jp/"><span class='a-link--external'>運営会社</span>
+                                </a></li>
+                            <li><a href="/guide/sitemap">サイトマップ</a></li>
+                        </ul>
+                    </b-collapse>
+                    <b-button class='o-responsive-footer__links__collapse-button' v-b-toggle.footer-keisai=''>
+                        採用ご担当者様へ
+                    </b-button>
+                    <b-collapse id='footer-keisai'>
+                        <ul class='o-responsive-footer__links__list'>
+                            <li><a href="/guide/keisai">中途求人掲載はこちら</a></li>
+                            <li><a href="/guide/keisai_student">新卒求人掲載はこちら</a></li>
+                        </ul>
+                    </b-collapse>
+                    <b-button class='o-responsive-footer__links__collapse-button' v-b-toggle.footer-sns=''>
+                        ブログ・SNS
+                    </b-button>
+                    <b-collapse id='footer-sns'>
+                        <ul class='o-responsive-footer__links__list o-responsive-footer__links__sns'>
+                            <li>
+                                <img src="https://paiza.jp/assets/icons/paiza_icon-6ad2f6c56caec537f1c1ffcc93723f5af04117b650f979f95136153f88200b54.png" alt="Paiza icon" />
+                                <a target="_blank" rel="noopener" href="http://paiza.hatenablog.com/"><span class='a-link--external'>paiza開発日誌(Blog)</span>
+                                </a></li>
+                            <li>
+                                <img src="https://paiza.jp/assets/icons/twitter_icon-d29cbefd0b7062ee7bab13d2aad371dac5ee14a143056fc067dd3d5c13185f37.png" alt="Twitter icon" />
+                                <a target="_blank" rel="noopener" href="https://twitter.com/paiza_official"><span class='a-link--external'>Twitter</span>
+                                </a></li>
+                            <li>
+                                <img src="https://paiza.jp/assets/icons/facebook_icon-bb8268f486a881d23589965e2a2119b8271a69a039f599341711fe9c9fce11a8.png" alt="Facebook icon" />
+                                <a target="_blank" rel="noopener" href="https://www.facebook.com/pages/paiza/116685535171645"><span class='a-link--external'>Facebook</span>
+                                </a></li>
+                        </ul>
+                    </b-collapse>
+                </nav>
+                <div class='o-responsive-footer__supports'>
+                    <div class='o-responsive-footer__supports__qa'>
+                        <p class='o-responsive-footer__supports__title'>お困りの方はこちら</p>
+                        <a class="a-fbtn a-fbtn--gray a-fbtn--stretch" target="_blank" href="https://paizasupport.zendesk.com/hc/ja">Q &amp; A</a>
+                    </div>
+                    <aside class='p-opinion'>
+                        <div id='opinion-area' style='color: #FFFFFF;'>
+                            <form class="new_opinions_front" id="new_opinions_front" action="/contacts" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="37iNxQVLF8x4SHSGrn627smtZq4BcIJXWxaYdwHZLbtPqpkvnsJWoCDK9kR0cuDve5+nCoxSOHguVFoDOWk+uw==" /><input value="https://paiza.jp/career/job_offers/7004?from=list" type="hidden" name="opinions_front[origin_url]" id="opinions_front_origin_url" />
+                                <label class="sr-only" for="opinions_front_content">paizaについて、気になる点やご意見がある方はこちら</label>
+                                <textarea class="p-opinion__text-area" placeholder="paizaについて、気になる点やご意見がある方はこちら" required="required" name="opinions_front[content]" id="opinions_front_content">
+</textarea>
+                                <span id='opinion-error'></span>
+                                <input type="submit" name="commit" value="ご意見を送信する" class="c-fbtn c-fbtn--stretch p-opinion__button" data-disable-with="ご意見を送信する" />
+                            </form></div>
+                        <div class='p-opinion__loading c-loader--spinner' id='opinion-area-loading'></div>
+                        <div class='p-opinion__thanks' id='opinion-area-thanks'>
+                            <p>ご意見ありがとうございました。</p>
+                            <p>頂いたご意見には必ずスタッフが目を通します。個々のご意見に返信できない旨、予めご了承ください。</p>
+                            <p class='mb20'>返信が必要な場合は下記のお問い合わせフォームからご連絡をお願い致します。</p>
+                            <p class='text-center'>
+                                <a class="c-fbtn" id="opinion_btn" href="#">お問い合わせフォーム</a>
+                            </p>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+        <div class='o-responsive-footer__services'>
+            <div class='o-responsive-footer__container'>
+                <ul class='o-responsive-footer__services__list'>
+                    <li>
+                        <a href="/student"><img alt="paiza新卒" class="c-link--img" src="https://paiza.jp/images/ds/logo/student/white@2x.png" width="120" height="24" />
+                        </a></li>
+                    <li>
+                        <a href="/career"><img alt="paiza転職" class="c-link--img" src="https://paiza.jp/images/ds/logo/career/white@2x.png" width="120" height="24" />
+                        </a></li>
+                    <li class='flex-self-end'>
+                        <a href="/en_try"><img alt="EN:TRY" class="c-link--img" src="https://paiza.jp/images/ds/logo/en_try/white@2x.png" width="80" height="25" />
+                        </a></li>
+                    <li>
+                        <a href="/works"><img alt="paizaラーニング" class="c-link--img" src="https://paiza.jp/images/ds/logo/learning/white@2x.png" width="148" height="22" />
+                        </a></li>
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://paiza.io/"><img alt="paiza.IO" class="c-link--img" src="https://paiza.jp/images/ds/logo/paizaio/white@2x.png" width="120" height="25" />
+                        </a></li>
+                    <li class='flex-self-start'>
+                        <a target="_blank" rel="noopener" href="https://paiza.cloud/"><img alt="PaizaCloud" width="126" class="c-link--img" src="https://paiza.jp/images/ds/logo/paizacloud/white@2x.png" />
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='o-responsive-footer__bottom'>
+            <div class='o-responsive-footer__bottom__container'>
+                <ul class='o-responsive-footer__bottom__list'>
+                    <li><a href="/guide/kiyaku">利用規約</a></li>
+                    <li><a href="/guide/policy">プライバシーポリシー</a></li>
+                </ul>
+                <p class='o-responsive-footer__copyright'>
+                    © Gino, Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+        <div class='o-footer-hidden-neko'>
+            <div class='o-footer-hidden-neko__dog-ear'>
+                <div class='o-footer-hidden-neko__dog-ear__page'></div>
+            </div>
+            <div class='o-footer-hidden-neko__shadow'></div>
+            <div class='o-footer-hidden-neko__back'></div>
+            <div class='o-footer-hidden-neko__wrapper'>
+                <img class="o-footer-hidden-neko__image" src="https://paiza.jp/assets/neko_sensei/14_03-5f8932c207c225af887acd33ab3379075f82d8b46eb5c5cb8742b2cab8f1ed90.gif" alt="14 03" width="30" height="30" />
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<div id='pagetop'>
+    <a href="#header"><img alt="ページの先頭へ戻る" class="rollover-image__on " data-rollover-path="https://paiza.jp/images/pagetop_o.png" onMouseover="this.src='https://paiza.jp/images/pagetop_o.png'" onMouseOut="this.src='https://paiza.jp/images/pagetop.png'" src="https://paiza.jp/images/pagetop.png" width="60" height="60" />
+    </a></div>
+</body>
+</html>

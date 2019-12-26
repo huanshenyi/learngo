@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20f7aa91-171f-46df-b73a-4cde57ed7ab8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crawler/model/jobInfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawler/paiza/parser/jobInfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crawler/paiza/parser/jobInfo_test_data.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/paiza/parser/languageList_test_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/paiza/parser/languageList_test_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/model/jobInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/model/jobInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/paiza/parser/jobInfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/paiza/parser/jobInfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/paiza/parser/jobInfo_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/paiza/parser/jobInfo_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/paiza/parser/language.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/paiza/parser/language.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -92,22 +95,15 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main/errhanding/filelistingserver" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestParseLanguageList in main/crawler/paiza/parser (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/crawler/paiza/parser" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/errhanding/filelistingserver/web.go" />
-      <package value="main/errhanding/filelistingserver" />
+      <package value="main/crawler/paiza/parser" />
       <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main/http" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/http/client.go" />
-      <package value="main/http" />
-      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestParseLanguageList$" />
       <method v="2" />
     </configuration>
     <configuration name="TestParseLanguageList in main/crawler/paiza/parser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -121,13 +117,24 @@
       <pattern value="^TestParseLanguageList$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestParserJobInfo in main/crawler/paiza/parser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/crawler/paiza/parser" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="main/crawler/paiza/parser" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestParserJobInfo$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build main/crawler" />
+        <item itemvalue="Go Test.TestParserJobInfo in main/crawler/paiza/parser" />
+        <item itemvalue="Go Test.TestParseLanguageList in main/crawler/paiza/parser (1)" />
         <item itemvalue="Go Test.TestParseLanguageList in main/crawler/paiza/parser" />
         <item itemvalue="Go Build.go build main/basic/regex" />
-        <item itemvalue="Go Build.go build main/errhanding/filelistingserver" />
-        <item itemvalue="Go Build.go build main/http" />
       </list>
     </recent_temporary>
   </component>
