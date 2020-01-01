@@ -14,7 +14,7 @@ func main() {
 	//})
 	e := engine.ConcurrentEngine{
 		Scheduler:   &scheduler.SimpleScheduler{},
-		WorkerCount: 10,
+		WorkerCount: 5,
 	}
 	e.Run(engine.Request{
 		Url:        "https://paiza.jp/career/job_offers/dev_language/Kotlin",
