@@ -13,11 +13,11 @@ func main() {
 	//	ParserFunc: parser.ParseLanguageList,
 	//})
 	e := engine.ConcurrentEngine{
-		Scheduler:   &scheduler.SimpleScheduler{},
-		WorkerCount: 5,
+		Scheduler:   &scheduler.QueuedScheduler{},
+		WorkerCount: 10,
 	}
 	e.Run(engine.Request{
-		Url:        "https://paiza.jp/career/job_offers/dev_language/Kotlin",
+		Url:        "https://paiza.jp/career/job_offers/dev_language/PHP",
 		ParserFunc: parser.ParseLanguageList,
 	})
 }
