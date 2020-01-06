@@ -4,7 +4,11 @@ import "main/crawler/engine"
 
 type QueuedScheduler struct {
 	requestChan chan engine.Request
-	WorkerChan  chan chan engine.Request
+	workerChan  chan chan engine.Request
+}
+
+func (s *QueuedScheduler) WorkerChan() chan engine.Request {
+	return make(chan engine.Request)
 }
 
 func (s *QueuedScheduler) Submit(r engine.Request) {
@@ -12,15 +16,11 @@ func (s *QueuedScheduler) Submit(r engine.Request) {
 }
 
 func (s *QueuedScheduler) WorkerReady(w chan engine.Request) {
-	s.WorkerChan <- w
-}
-
-func (s *QueuedScheduler) ConfigureMasterWorkerChan(chan engine.Request) {
-
+	s.workerChan <- w
 }
 
 func (s *QueuedScheduler) Run() {
-	s.WorkerChan = make(chan chan engine.Request)
+	s.workerChan = make(chan chan engine.Request)
 	s.requestChan = make(chan engine.Request)
 	go func() {
 		var requestQ []engine.Request
@@ -36,7 +36,7 @@ func (s *QueuedScheduler) Run() {
 			select {
 			case r := <-s.requestChan:
 				requestQ = append(requestQ, r)
-			case w := <-s.WorkerChan:
+			case w := <-s.workerChan:
 				workerQ = append(workerQ, w)
 			case activeWorker <- activeRequest:
 				workerQ = workerQ[1:]
